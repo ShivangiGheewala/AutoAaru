@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>755416491618-s3f4e0u14url39r1slts4d5ukai74qfm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.755416491618-s3f4e0u14url39r1slts4d5ukai74qfm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBg6eWEL1mQXo-44dW3FxUYRMNQn-O_hJ4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>755416491618</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.autoaaru</string>
+	<key>PROJECT_ID</key>
+	<string>autoaaru-5c4e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>autoaaru-5c4e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:755416491618:ios:f80687389902ad88</string>
+	<key>DATABASE_URL</key>
+	<string>https://autoaaru-5c4e6.firebaseio.com</string>
+</dict>
+</plist>
