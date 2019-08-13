@@ -1,27 +1,36 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components";
+import LinearGradient from "react-native-linear-gradient";
 
 const Button = props => (
   <TouchableOpacity
     style={{
-      width: 317,
-      height: 40,
-      backgroundColor: "#a52724",
-      borderColor: "#111111",
-      borderRadius: 10,
-      marginTop: "3%",
-      alignItems: "center"
+      width: 155.82,
+      height: 47,
+      borderRadius: 14,
+      alignSelf: "center"
     }}
   >
-    <Text> {props.text}</Text>
+    <LinearGradient
+      colors={["#FF9800", "#DE4829", "#F83E12"]}
+      style={{
+        flex: 1,
+        width: "100%",
+        height: "100%",
+        borderRadius: 14,
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+    >
+      <Text> {props.text}</Text>
+    </LinearGradient>
   </TouchableOpacity>
 );
 export default Button;
 
 const Text = styled.Text`
-  font-size: 20;
-  padding-top: 5;
-  font-weight: normal;
-  color: #f2f2f2;
+  font-size: 22.5;
+  font-weight: 600;
+  color: #ffffff;
 `;
