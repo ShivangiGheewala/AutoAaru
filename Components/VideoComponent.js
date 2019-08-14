@@ -11,7 +11,7 @@ const VideoComponent = props => (
         this.video = ref;
       }}
       repeat={true}
-      muted={false}
+      muted={true}
       style={{
         position: "absolute",
         backgroundColor: "#000000",

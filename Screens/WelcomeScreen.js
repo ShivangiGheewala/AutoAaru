@@ -15,7 +15,8 @@ import LinearGradient from "react-native-linear-gradient";
 
 const mapStateToProps = state => {
   return {
-    videoLink: state.urlData
+    videoLink: state.urlData,
+    login: state.loginData
   };
 };
 
@@ -23,7 +24,6 @@ class WelcomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: "login",
       timePassed: false
     };
   }
@@ -49,7 +49,7 @@ class WelcomeScreen extends React.Component {
           />
           <Logo source={require("../assests/logo.png")} />
           <LoginComponent />
-          <Footer>
+          <Footer login={this.props.login}>
             <Text>Terms & conditions</Text>
             <LinkText>www.aaru.com.au</LinkText>
           </Footer>
@@ -71,8 +71,8 @@ const Logo = styled.Image`
 `;
 const Footer = styled.View`
   position: absolute;
-  top: 86%;
-  height: 14%;
+  top: ${({ login }) => (login === true && "86%") || "90%"};
+  height: ${({ login }) => (login === true && "14%") || "10%"};
   justify-content: space-between;
   flex-direction: column;
   align-items: center;

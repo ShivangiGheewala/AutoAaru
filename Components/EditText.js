@@ -3,7 +3,7 @@ import { TextInput } from "react-native";
 import styled from "styled-components";
 
 const EditText = props => (
-  <Container>
+  <Container login={props.login}>
     <Text>{props.title}</Text>
     <TextInput
       placeholder={props.placeholderName}
@@ -28,7 +28,7 @@ export default EditText;
 
 const Container = styled.View`
   width: 90%;
-  height: 35%;
+  height: ${({ login }) => (login === true && "35%") || "25%"};
   margin-top: 3%;
 `;
 const Text = styled.Text`
